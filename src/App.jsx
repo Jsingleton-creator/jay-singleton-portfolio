@@ -1,7 +1,6 @@
 const fallbackImage =
   'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700"><rect width="100%" height="100%" fill="%23ece8df"/><text x="50%" y="50%" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="%236d6759">Image coming soon</text></svg>';
 
-// EDIT THIS CONTENT: update copy, links, and image paths in this object.
 const content = {
   name: 'Jay Singleton',
   title: 'Intelligent podcasts with a spine.',
@@ -30,29 +29,68 @@ const content = {
   },
   selectedWork: [
     {
-      title: 'Wrong Side of History',
-      role: 'Creator, host and producer of a research-led history podcast about understanding history’s “bad guys” the way they understood themselves. The first season examines the women who opposed women’s suffrage.',
-      image: '/assets/wrong-side-of-history-artwork.png'
-    },
-    {
       title: 'Secret Leaders',
-      role: 'Producer on a long-running founder interview show. Work included guest research, editorial planning, show structure, production, and helping turn business stories into episodes with shape and momentum.',
-      image: '/assets/secret-leaders-logo.png'
+      role: 'Producer',
+      description:
+        'Long-running founder interview podcast shaped through tight guest research, editorial planning and episode structuring. I helped turn business stories into episodes with real momentum.',
+      image: '/assets/secret-leaders-logo.png',
+      link: '#'
     },
     {
       title: 'Simon Says with Simon Squibb',
-      role: 'Lead producer on a live call-in advice show built across YouTube, podcast, social and live formats. A fast-moving production with real callers, live judgement calls and a strong community engine.',
-      image: '/assets/headshot.jpg'
+      role: 'Lead Producer',
+      description:
+        'Live call-in advice show built across YouTube, podcast and social formats. Fast-paced production balancing live decisions with consistent audience value.',
+      image: '/assets/simon-says-logo.png',
+      link: '#'
     },
     {
       title: 'We Are In Beta',
-      role: 'Developed and produced education-focused podcasts for a community of school leaders, teachers and education professionals. The work was about turning lived experience and sector knowledge into useful, human stories.',
-      image: '/assets/we-are-in-beta-logo.png'
+      role: 'Development & Production',
+      description:
+        'Education-focused podcasts for school leaders and teachers. I helped shape lived experience and sector expertise into useful, human-led episodes.',
+      image: '/assets/we-are-in-beta-logo.png',
+      link: '#'
+    },
+    {
+      title: 'PIXL Leadership Club',
+      role: 'Producer',
+      description:
+        'Leadership conversations for education audiences, developed with a focus on clarity, practical value and credible editorial tone.',
+      image: '/assets/pixl-leadership-club-logo.png',
+      link: '#'
+    },
+    {
+      title: 'PIXL Pearls',
+      role: 'Producer',
+      description:
+        'Concise education podcast episodes designed for quick professional insight. I worked on framing, pacing and making each episode immediately useful.',
+      image: '/assets/pixl-pearls-logo.png',
+      link: '#'
+    },
+    {
+      title: 'The One You Feed',
+      role: 'Contributor',
+      description:
+        'Editorial and production support on a show about behavior, mindset and better living, with attention to meaningful guest storytelling.',
+      image: '/assets/The-One-You-Feed-logo.jpg',
+      link: '#'
+    },
+    {
+      title: 'Daily Stoic',
+      role: 'Contributor',
+      description:
+        'Support on philosophy-driven audio that turns Stoic ideas into practical listening. Focused on concise storytelling and accessible framing.',
+      image: '/assets/daily-stoic-logo.png',
+      link: '#'
     },
     {
       title: 'Blinkist',
-      role: 'Worked across short-form editorial audio, helping turn books and ideas into concise, listenable scripts and series. A useful training ground in clarity, compression and making ideas travel.',
-      image: '/assets/blinkist-logo.png'
+      role: 'Editorial Audio Producer',
+      description:
+        'Short-form editorial audio turning books and ideas into concise scripts and listenable series. A strong exercise in clarity and compression.',
+      image: '/assets/blinkist-logo.png',
+      link: '#'
     }
   ],
   whatIDo: [
@@ -108,9 +146,8 @@ function App() {
           <h2>{content.roleLine}</h2>
           <p className="lead">{content.intro}</p>
           <div className="button-row">
-            {/* EDIT LINKS: update href values in content.heroButtons above */}
             <a className="btn btn-solid" href={content.heroButtons.listen}>
-              Listen to Wrong Side of History
+              Listen now
             </a>
             <a className="btn btn-outline" href={content.heroButtons.selectedWork}>
               See Selected Work
@@ -120,23 +157,6 @@ function App() {
             </a>
           </div>
         </div>
-
-        <aside className="hero-panel" aria-label="Flagship project highlight">
-          <p className="panel-label">Flagship Project</p>
-          <h3>Wrong Side of History</h3>
-          {content.wrongSide.description.slice(0, 2).map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-          {/* EDIT LINK: replace # with platform/show URL */}
-          <a className="text-link" href={content.wrongSide.listenLink}>
-            Listen to Wrong Side of History →
-          </a>
-          <SmartImage
-            src="/assets/wrong-side-of-history-artwork.png"
-            alt="Wrong Side of History podcast artwork"
-            className="artwork"
-          />
-        </aside>
       </header>
 
       <main>
@@ -158,18 +178,22 @@ function App() {
             ))}
           </div>
           <a className="text-link" href={content.wrongSide.listenLink}>
-            Listen to Wrong Side of History →
+            Listen now →
           </a>
         </section>
 
         <section className="section" id="selected-work">
           <h3>Selected Work</h3>
-          <div className="grid">
+          <div className="carousel" role="list">
             {content.selectedWork.map((project) => (
-              <article className="project-card" key={project.title}>
+              <article className="project-card" key={project.title} role="listitem">
                 <SmartImage src={project.image} alt={`${project.title} logo`} className="logo" />
                 <h4>{project.title}</h4>
-                <p>{project.role}</p>
+                <p className="project-role">{project.role}</p>
+                <p>{project.description}</p>
+                <a className="text-link" href={project.link}>
+                  Listen now →
+                </a>
               </article>
             ))}
           </div>
@@ -199,7 +223,7 @@ function App() {
             <br />
             LinkedIn:{' '}
             <a className="text-link" href={content.contact.linkedin}>
-              {content.contact.linkedin}
+              LinkedIn
             </a>
           </p>
           <a className="btn btn-solid" href={`mailto:${content.contact.email}`}>

@@ -177,10 +177,18 @@ h2 {
   background: #e9e2d5;
 }
 
-.grid {
+.carousel {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(260px, 320px);
   gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.35rem;
+  scroll-snap-type: x proximity;
+}
+
+.carousel .project-card {
+  scroll-snap-align: start;
 }
 
 .project-card {
@@ -208,6 +216,12 @@ h2 {
 .project-card h4 {
   margin: 0.8rem 0 0.3rem;
   font-size: 1.2rem;
+}
+
+.project-role {
+  font-weight: 650;
+  margin-bottom: 0.45rem !important;
+  color: #302c24 !important;
 }
 
 .project-card p,
@@ -251,7 +265,6 @@ h2 {
 @media (max-width: 980px) {
   .hero,
   .about-layout,
-  .grid,
   .services-grid {
     grid-template-columns: 1fr;
   }
@@ -273,6 +286,31 @@ h2 {
 
 .long-copy p {
   max-width: 72ch;
+}
+
+#wrong-side-of-history {
+  position: relative;
+  color: #f0e7d1;
+  border: 1px solid #5d533f;
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  background:
+    radial-gradient(130% 110% at 12% 8%, rgba(184, 128, 67, 0.2) 0%, rgba(184, 128, 67, 0) 52%),
+    radial-gradient(120% 95% at 88% 84%, rgba(167, 117, 76, 0.2) 0%, rgba(167, 117, 76, 0) 58%),
+    linear-gradient(165deg, #12170f 0%, #1b2217 42%, #0e110d 100%);
+  box-shadow: inset 0 0 0 1px rgba(184, 151, 91, 0.25), 0 12px 30px rgba(0, 0, 0, 0.24);
+}
+
+#wrong-side-of-history h3 {
+  color: #e2c88c;
+}
+
+#wrong-side-of-history .text-link {
+  color: #e7cf98;
+}
+
+#wrong-side-of-history .text-link:hover {
+  color: #f2ddae;
 }
 
 .contact-lead {
