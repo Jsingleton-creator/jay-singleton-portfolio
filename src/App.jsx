@@ -3,18 +3,20 @@ const fallbackImage =
 
 const content = {
   name: 'Jay Singleton',
-  roleLine: 'Podcast creator, producer and story developer',
+  roleLine: 'Ideas worth listening to',
   intro:
-    'I make story-led podcasts about difficult ideas and help people turn complex subjects into shows with tension, substance and point of view.',
+    'I’m Jay Singleton, a podcast creator, producer and story developer. I work with thinkers, founders and organisations to shape ideas into shows people want to share.',
   heroButtons: {
     listen: 'https://open.spotify.com/episode/6M9GHT2AduQ8FywaFlIv4M?si=hu2VPU__QHKyh0IXnhbZIw',
     selectedWork: '#selected-work',
     contact: '#contact'
   },
   about: [
-    'I’m Jay Singleton, a podcast creator, producer and story developer. I’ve spent nearly a decade making shows across interviews, narrative, education, business, live formats and short-form audio. My work usually starts in the same place: a person with something worth saying, but no clear shape for how to say it.',
-    'I help find that shape.',
-    'I’ve produced founder interviews, developed education podcasts, led live multi-platform shows, worked on short-form editorial series, and built my own research-led history show from scratch. I’m interested in podcasts with a real point of view: shows that respect the audience, carry ideas clearly, and don’t collapse into bland conversation.'
+    'Jay Singleton is a podcast creator, producer and story developer working with thinkers, founders and organisations with a point of view.',
+    'I work with people who care about what they’re saying and want help turning it into a show with shape, voice and direction.',
+    'My work sits between editorial development, story structure and production. I help develop premises, formats, episode arcs, interview styles and host voice, shaping ideas into podcasts people want to hear, share and come back to.',
+    'I’ve worked across founder interviews, education podcasts, live formats, short-form editorial audio and research-led storytelling.',
+    'I’m also the creator of Wrong Side of History, a podcast about worldviews: how people in the past understood their own choices, and what their certainty can teach us about ours.'
   ],
   wrongSide: {
     title: 'Wrong Side of History',
@@ -117,7 +119,7 @@ const content = {
   ],
   contact: {
     intro: 'Have a show in mind?',
-    body: 'I work best with people who care about substance, story and getting the details right. That might be a founder with a strong point of view, a thinker with years of ideas to organise, or an organisation that wants to make something more interesting than branded content. Send me a short note with what you’re thinking about, who it’s for, and where you are in the process.',
+    body: 'You might be a founder with a strong point of view, a thinker with years of ideas to organise, or an organisation that wants to make something more interesting than branded content.\n\nSend me a short note with what you’re thinking about, who it’s for, and where you are in the process.',
     email: 'jahwuan.singleton1@gmail.com',
     linkedin: 'https://www.linkedin.com/in/jay-singleton-550b7143/'
   }
