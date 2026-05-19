@@ -20,6 +20,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: linear-gradient(180deg, #e7dbc5 0%, var(--bg) 55%, #f4ecdd 100%);
+  overflow-x: hidden;
 }
 
 .page {

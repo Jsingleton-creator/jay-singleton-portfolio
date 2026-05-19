@@ -7,7 +7,7 @@ const content = {
   intro:
     'I make story-led podcasts about difficult ideas and help people turn complex subjects into shows with tension, substance and point of view.',
   heroButtons: {
-    listen: '#wrong-side-of-history',
+    listen: 'https://open.spotify.com/episode/6M9GHT2AduQ8FywaFlIv4M?si=hu2VPU__QHKyh0IXnhbZIw',
     selectedWork: '#selected-work',
     contact: '#contact'
   },
@@ -30,7 +30,7 @@ const content = {
       title: 'Secret Leaders',
       role: 'Video Podcast Producer',
       description:
-        'Founder interview show with guest strategy, briefing, production, editorial shaping and video expansion.',
+        'Founder interview show shaped through guest strategy, briefing, production and editorial direction.',
       image: '/assets/secret-leaders-logo.png',
       link: 'https://open.spotify.com/episode/1W6rz3cjiFZ7yMjcCeOUVj?si=fd2d10ea11aa4d91'
     },
@@ -46,7 +46,7 @@ const content = {
       title: 'We Are In Beta Podcast',
       role: 'Podcast Producer',
       description:
-        'Education-sector podcast formats produced end-to-end for a large school leadership community.',
+        'End-to-end education podcast production for a major school leadership community.',
       image: '/assets/we-are-in-beta-logo.png',
       link: 'https://open.spotify.com/episode/3q2Rctep5ispDTtfBHZiaH?si=203720630eda44f1'
     },
@@ -69,7 +69,7 @@ const content = {
       title: 'The One You Feed',
       role: 'Format Developer / Producer',
       description:
-        'Developed the Blinkist Shortcast adaptation and later produced with the original team.',
+        'Developed the Blinkist Shortcast adaptation, then produced episodes with the original team.',
       image: '/assets/The-One-You-Feed-logo.jpg',
       link: 'https://podcasts.apple.com/gb/podcast/the-one-you-feed-personal-growth-emotional-resilience/id792555885?i=1000654108529'
     },
@@ -119,7 +119,7 @@ const content = {
     intro: 'Have a show in mind?',
     body: 'I work best with people who care about substance, story and getting the details right. That might be a founder with a strong point of view, a thinker with years of ideas to organise, or an organisation that wants to make something more interesting than branded content. Send me a short note with what you’re thinking about, who it’s for, and where you are in the process.',
     email: 'jahwuan.singleton1@gmail.com',
-    linkedin: 'https://www.linkedin.com/in/jaysingleton'
+    linkedin: 'https://www.linkedin.com/in/jay-singleton-550b7143/'
   }
 };
 
